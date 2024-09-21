@@ -1,0 +1,139 @@
+/* Flexbox for overall layout */
+.login-container {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Left sidebar for the login page */
+.login-sidebar {
+  width: 35%;
+  background-color: #6A0DAD;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+/* Styling for sidebar text */
+.login-sidebar h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.login-sidebar p {
+  font-size: 1.2rem;
+}
+
+/* Right form side */
+.login-form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.login-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Login button */
+.login-btn {
+  padding: 10px 20px;
+  background-color: #6A0DAD;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Signup link styling */
+.signup-link {
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #6A0DAD;
+  text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .login-container {
+      flex-direction: column; /* Stack sidebar and form vertically */
+      height: auto; /* Allow height to adjust */
+  }
+
+  .login-sidebar {
+      width: 100%; /* Full width on small screens */
+      padding: 30px; /* Adjust padding */
+  }
+
+  .login-form {
+      width: 100%; /* Full width on small screens */
+      padding: 20px; /* Adjust padding */
+  }
+
+  .login-sidebar h1 {
+      font-size: 2rem; /* Adjust font size */
+  }
+
+  .login-sidebar p {
+      font-size: 1rem; /* Adjust font size */
+  }
+
+  .login-form h2 {
+      font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .form-group {
+      max-width: 90%; /* Wider input fields on smaller screens */
+  }
+
+  .login-btn {
+      font-size: 0.9rem; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .login-sidebar h1 {
+      font-size: 1.5rem; /* Further adjust font size */
+  }
+
+  .login-sidebar p {
+      font-size: 0.9rem; /* Further adjust font size */
+  }
+
+  .login-form h2 {
+      font-size: 1.2rem; /* Further adjust font size */
+  }
+}

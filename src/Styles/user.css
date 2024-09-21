@@ -1,0 +1,17 @@
+.users {
+    margin-left: 250px;
+    padding: 20px;
+    margin-right: 10px;
+  }
+  
+  .userstable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .userstable th, .userstable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,11 @@
+/* Flexbox layout to make Sidebar stay fixed and content next to it */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow: auto;
+}

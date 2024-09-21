@@ -1,0 +1,93 @@
+.event {
+  margin-left: 250px; /* Adjust according to sidebar width */
+  padding: 20px;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.btnadd {
+  display: flex;
+  justify-content: right;
+  margin-left: auto;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #6A0DAD;
+  color: white;
+  border: none;
+  border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  margin: 10px auto;
+  transition: background-color 0.3s ease;
+}
+
+.view {
+  background-color: #00bcd4; /* Teal for View */
+}
+ 
+.edit {
+  background-color: #4caf50; /* Green for Edit */
+}
+ 
+.delete {
+  background-color: #f44336; /* Red for Delete */
+}
+ 
+.action-button:hover {
+  opacity: 0.8;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.events-table th, .events-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .main-content {
+    margin-left: 200px; /* Adjust margin to match sidebar width */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0; /* Remove left margin on mobile */
+  }
+
+  .btnadd {
+    width: 100%; /* Make button full width */
+    justify-content: center;
+  }
+
+  .events-table th, .events-table td {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+}

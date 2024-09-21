@@ -1,0 +1,93 @@
+.eventaddform {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: calc(100% - 270px);
+}
+
+.eventaddform h2 {
+    color: #6A0DAD;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.eventaddform label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.eventaddform input,
+.eventaddform textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.eventaddform textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.eventaddform button.submit-btn {
+    background-color: #6A0DAD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+}
+
+.eventaddform button.submit-btn:hover {
+    background-color: #5a0b9e;
+}
+
+.eventaddform .backbutton {
+    background-color: #6A0DAD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+}
+
+.eventaddform .backbutton {
+    background-color: #5a0b9e;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .eventaddform {
+        width: calc(100% - 40px); /* Adjust width for smaller screens */
+    }
+}
