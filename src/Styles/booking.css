@@ -14,4 +14,25 @@
     padding: 10px;
     text-align: center;
   }
+
+  .filter-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .filter-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .filter-button:not(.active) {
+    background-color: #f1f1f1;
+  }
+  
   
