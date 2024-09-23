@@ -88,8 +88,9 @@ function EventEditForm() {
   }, [isModalOpen, navigate]);
 
   return (
+    <div className='editform'>
     <div className="eventeditform">
-      <button className="backbutton" onClick={handleBackClick}>Back</button>
+    <span class="colored-arrow" onClick={handleBackClick}>&larr;</span>
       <h2>Edit Event</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -221,6 +222,7 @@ function EventEditForm() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

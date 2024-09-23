@@ -32,6 +32,10 @@ function Event() {
   const [deleteSuccess, setDeleteSuccess] = useState(false); // State for success message
   const navigate = useNavigate();
 
+  const handleAdd=(eventId)=>{
+    navigate('/addEvent')
+  }
+
   const handleEditClick = (eventId) => {
     navigate(`/editEvent/${eventId}`); // Navigate to edit page with eventId
   };
@@ -74,9 +78,7 @@ function Event() {
   return (
     <div className="event">
       <h1>Events</h1>
-      <Link to="/addEvent">
-        <button className='btnadd'>Add</button>
-      </Link>
+        <button className='btnadd' onClick={handleAdd}>Add</button>
       {deleteSuccess && (
         <div className="success-message">Event deleted successfully!</div>
       )}

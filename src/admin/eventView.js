@@ -48,8 +48,9 @@ function EventView() {
   }
 
   return (
+    <div className='viewevent'>
     <div className="eventview">
-      <button onClick={handleBackClick}>Back</button>
+    <span class="colored-arrow" onClick={handleBackClick}>&larr;</span>
       <h2>{eventData.title}</h2>
       <img src={eventData.image} alt={eventData.title} className="eventviewimage" />
       <p><strong>Description:</strong> {eventData.description}</p>
@@ -63,6 +64,7 @@ function EventView() {
       <p><strong>Tickets Available:</strong> {eventData.ticketsAvailable}</p>
       <p><strong>Promocode:</strong> {eventData.promocode}</p>
       
+    </div>
     </div>
   );
 }

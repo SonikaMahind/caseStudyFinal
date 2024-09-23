@@ -59,8 +59,10 @@ function EventAddForm() {
   }, [isModalOpen, navigate]);
 
   return (
+    <div className='addform'>
     <div className="eventaddform">
-      <button className='backbutton' onClick={handleBackClick}>Back</button>
+    <span class="colored-arrow" onClick={handleBackClick}>&larr;</span>
+      
       <h2>Add New Event</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -192,6 +194,7 @@ function EventAddForm() {
           </div>
         </div>
       )}
+    </div>
     </div>
   );
 }

@@ -1,3 +1,10 @@
+.addform{
+    margin-left: 250px; /* Adjust according to sidebar width */
+    padding: 20px;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
 .eventaddform {
     padding: 20px;
     max-width: 800px;
@@ -9,7 +16,7 @@
 }
 
 .eventaddform h2 {
-    color: #6A0DAD;
+    color: #e91e63;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -35,8 +42,8 @@
 }
 
 .eventaddform button.submit-btn {
-    background-color: #6A0DAD;
-    color: white;
+    color: #ffffff;
+    background-color: #e91e63;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -47,22 +54,14 @@
 }
 
 .eventaddform button.submit-btn:hover {
-    background-color: #5a0b9e;
+    background-color: #d81b60;
 }
 
-.eventaddform .backbutton {
-    background-color: #6A0DAD;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+.colored-arrow {
+    color: #e91e63;
+    font-weight:bolder;
+    font-size: 40px; 
     cursor: pointer;
-    font-size: 16px;
-    display: block;
-}
-
-.eventaddform .backbutton {
-    background-color: #5a0b9e;
 }
 
 .modal {

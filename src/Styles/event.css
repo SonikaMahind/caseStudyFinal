@@ -11,8 +11,8 @@
   margin-left: auto;
   margin-bottom: 10px;
   padding: 10px 20px;
-  background-color: #6A0DAD;
-  color: white;
+  color: #ffffff;
+  background-color: #e91e63;
   border: none;
   border-radius: 5px;
     cursor: pointer;
@@ -52,6 +52,11 @@
 .events-table {
   width: 100%;
   border-collapse: collapse;
+}
+
+.events-table thead{
+ color: rgb(255, 252, 252);
+ background-color: #e91e63;
 }
 
 .events-table th, .events-table td {
